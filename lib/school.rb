@@ -18,9 +18,10 @@ class School
   end
 
   def sort
-    self.roster.collect do |grade|
-      puts grade
-
+    self.roster.collect do |grade, students|
+      puts "grade = #{grade}"
+      puts "students = #{students}"
+      students.sort
     end
   end
 end
