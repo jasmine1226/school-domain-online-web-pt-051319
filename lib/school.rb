@@ -19,9 +19,7 @@ class School
 
   def sort
     self.roster.each do |grade, students|
-      puts "grade = #{grade}"
       self.roster[grade] = students.sort
-      puts "students = #{students}"
     end
   end
 end
