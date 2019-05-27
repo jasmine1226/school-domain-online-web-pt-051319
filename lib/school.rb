@@ -20,8 +20,9 @@ class School
   def sort
     self.roster.each do |grade, students|
       puts "grade = #{grade}"
-      puts "students = #{students}"
+
       students = students.sort
+            puts "students = #{students}"
     end
   end
 end
